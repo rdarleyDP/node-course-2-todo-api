@@ -101,7 +101,7 @@ app.patch('/todos/:id', (req, res) => {
         res.send({todo});
     }).catch((e) => {
         res.status(400).send();
-    })
+    });
 });
 
 
@@ -145,4 +145,4 @@ app.listen(port, () => {
     console.log(`Started on port ${port}`);
 });
 
-module.exports = {app}
+module.exports = {app};
